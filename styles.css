@@ -2,26 +2,32 @@
 /* GLOBAL STYLES */
 body {
   background: rgb(204, 118, 118);
-  padding-top: 5em;
+  /* //original */
+  /* padding-top: 2em;
   display: flex;
-  /* justify-content: center;
-  text-align: center; */
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 
 }
 
 /* DEMO-SPECIFIC STYLES */
 .typewriter h1 {
-display: flex;
+/* display: flex; */
   color: rgb(100, 63, 63);
-  font-family: 'serif';
-  font-weight: 800;
-  font-size: 50px
-  ;
+  font-family: roboto mono;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid rgb(255, 255, 255); /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .2em; /* Adjust as needed */
+  letter-spacing: 2px; /* Adjust as needed */
   animation: 
     typing 3.5s steps(24, end),
     blink-caret .5s step-end infinite;
@@ -40,22 +46,31 @@ display: flex;
   50% { border-color: rgb(255, 255, 255) }
 }
 img {
-    display: flex;
+    /* display: ; */
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; 
     width: 100%;
     position: relative; 
     vertical-align: top;
+    max-width: 200px;
   }
 
-  .container {
-    width: 500px;
-    height: 500px;
+ .container {
+ width: 200px;
+    height: 300px;
     margin: 0 auto;
-    
-    /* Flex rules */
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    
+    background-color: rgb(197, 144, 144);
+    border-radius: 10px;
+    padding: 15px 25px;
+    width: 100%;
+    max-width: 400px;
+    min-width: 100px;
+    display: column;
+    flex-direction: column;
+    text-align: center;
+    /* text-transform: uppercase;  */
+
